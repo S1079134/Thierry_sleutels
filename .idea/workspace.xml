@@ -70,8 +70,8 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0149254" vertical-offset="1275" max-vertical-offset="3366">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state vertical-scroll-proportion="-0.717566" vertical-offset="2495" max-vertical-offset="3366">
+              <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5068#5076#0" expanded="true" />
@@ -1737,8 +1737,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0149254" vertical-offset="1275" max-vertical-offset="3366">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state vertical-scroll-proportion="-0.717566" vertical-offset="2495" max-vertical-offset="3366">
+          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5068#5076#0" expanded="true" />
