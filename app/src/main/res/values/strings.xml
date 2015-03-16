@@ -4,4 +4,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="bedrijfsInfo">De Sleutelaar, voor al uw hang en sluitwerk! Selecteer onderin een van onze sloten!</string>
+    <string name="LoginText">Vul hier uw IP Adres in:</string>
 </resources>

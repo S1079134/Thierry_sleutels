@@ -1,4 +1,4 @@
-package com.hmkcode.sleutel_app;
+package com.hmkcode.thierry_sleutels;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
