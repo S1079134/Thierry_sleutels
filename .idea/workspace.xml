@@ -6,16 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8376c7-ee5b-414f-be33-329876502cdc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml" />
-      <change type="DELETED" beforePath="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\src\main\java\com\hmkcode\sleutel_app\MainActivity.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\src\androidTest\java\com\hmkcode\sleutel_app\ApplicationTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/hmkcode/thierry_sleutels/ApplicationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3f8376c7-ee5b-414f-be33-329876502cdc" name="Default" comment="" />
     <ignored path="Thierry_sleutels.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1636,12 +1627,16 @@
       <created>1426521248043</created>
       <updated>1426521248043</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login pagina aangemaakt. Zodat er verbinding naar de server gemaakt kan worden. Werkt nu nog niet goed omdat er nog geen verbinding met de server is">
+      <created>1426522169037</created>
+      <updated>1426522169037</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
