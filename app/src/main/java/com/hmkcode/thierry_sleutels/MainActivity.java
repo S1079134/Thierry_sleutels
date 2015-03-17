@@ -52,7 +52,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         //setup
         bisInfo = (TextView) findViewById(R.id.bisInfoTextView);
         SlotenTag = (TextView) findViewById(R.id.SlotenTextView);
-        SlotenInfo = (TextView) findViewById(R.id.SlotensInfoShort);
+        SlotenInfo = (TextView) findViewById(R.id.InfoShort);
         headerText = (TextView) findViewById(R.id.headerText);
 
         nextButton = (Button) findViewById(R.id.nextButton);
@@ -69,9 +69,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 
         // Inladen van de Sloten Lijst
         ArrayList<String> list;
-        list = SlotenLijstModel.getSlotensLijst();
+        list = SlotenLijstModel.getSlotenLijst();
 
-        // Menu spinner vullen met opgehaalde Slotens lijst
+        // Menu spinner vullen met opgehaalde Sloten lijst
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
                 (this, R.layout.spinneritem, list);
 
@@ -121,7 +121,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         }
         // Gebeurd na de eerste keer laden
         else{
-            setSelectedSlotens();
+            setSelectedSloten();
 
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.putInt(Pos,pos);
@@ -129,14 +129,14 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         }
 
         SlotenLijstModel.setSelectedSloten(pos);
-        setSelectedSlotens();
+        setSelectedSloten();
     }
 
-    public void setSelectedSlotens(){
+    public void setSelectedSloten(){
 
         if (settingsData.getisOnline() == true) {
             // Ophalen van de beknopte informatie
-            getSlotensInfoShort();
+            getSlotenInfoShort();
         }
         else{
             // Hardcoded short info array
@@ -149,7 +149,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         }
 
         // Vullen van textveld welke een kopje is van de beknopte beschrijving
-        SlotenTag.setText(SlotenLijstModel.getSlotensLijst().get(SlotenLijstModel.getSelectedSloten()));
+        SlotenTag.setText(SlotenLijstModel.getSlotenLijst().get(SlotenLijstModel.getSelectedSloten()));
         SlotenInfo.setText(informatieSlotenBeknoptModel.getShortInfoSloten());
     }
 
@@ -158,13 +158,13 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
     }
 
     // Functie om de beknopte informatie op te halen en het model te vullen
-    public void getSlotensInfoShort() {
+    public void getSlotenInfoShort() {
         //aanmaken van een nieuw jsonobject
         JSONObject infoObject = new JSONObject();
 
         try {
             //verzenden van het jsonobject
-            infoObject.put("informatiebeknopt",(SlotenLijstModel.getSlotensLijst().get(SlotenLijstModel.getSelectedSloten())));
+            infoObject.put("informatiebeknopt",(SlotenLijstModel.getSlotenLijst().get(SlotenLijstModel.getSelectedSloten())));
 
         } catch (JSONException e) {
             e.printStackTrace();
