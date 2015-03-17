@@ -6,4 +6,12 @@
     <string name="bedrijfsInfo">De Sleutelaar, voor al uw hang en sluitwerk! Selecteer onderin een van onze sloten!</string>
     <string name="Verder">Ga verder om sloten aan te vragen.</string>
     <string name="LoginText">Vul hier uw IP Adres in:</string>
+    <string name="GegevensInvoer">Voer hier uw gegevens in voor de aanvraag:</string>
+
+
+    <string name="Naam">Naam:</string>
+    <string name="Adres">Adres:</string>
+    <string name="Tel">Tel:</string>
+    <string name="Email">E-mail:</string>
+
 </resources>
