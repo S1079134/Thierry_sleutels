@@ -6,7 +6,12 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8376c7-ee5b-414f-be33-329876502cdc" name="Default" comment="" />
+    <list default="true" id="3f8376c7-ee5b-414f-be33-329876502cdc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/AanvraagActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_aanvraag.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Thierry_sleutels.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,24 +35,22 @@
     <leaf>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-11.333333" vertical-offset="153" max-vertical-offset="2074">
               <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-              <folding>
-                <element signature="e#2111#2133#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="238">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+            <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="391">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -56,25 +59,80 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state vertical-scroll-proportion="-51.357143" vertical-offset="1316" max-vertical-offset="3689">
+              <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="165" selection-end-column="42" />
               <folding>
-                <element signature="e#2563#2571#0" expanded="true" />
-                <element signature="e#2946#2947#0" expanded="true" />
-                <element signature="e#3002#3003#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SleutelActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/SleutelActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2907">
+              <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_sloten.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sloten.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-45.535713" vertical-offset="0" max-vertical-offset="2312">
+              <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+              <folding>
+                <element signature="e#3356#3372#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.717566" vertical-offset="2495" max-vertical-offset="3366">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2167" max-vertical-offset="3366">
               <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5068#5076#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AanvraagActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/AanvraagActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23421355" vertical-offset="357" max-vertical-offset="4046">
+              <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_aanvraag.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_aanvraag.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-108.92593" vertical-offset="0" max-vertical-offset="3740">
+              <caret line="173" column="50" selection-start-line="173" selection-start-column="50" selection-end-line="173" selection-end-column="50" />
+              <folding>
+                <element signature="e#3538#3562#0" expanded="true" />
+                <element signature="e#4202#4216#0" expanded="true" />
+                <element signature="e#5038#5053#0" expanded="true" />
+                <element signature="e#5876#5889#0" expanded="true" />
+                <element signature="e#6710#6725#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,14 +140,14 @@
       </file>
       <file leaf-file-name="login_scherm.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.327273" vertical-offset="510" max-vertical-offset="1326">
+            <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1326">
               <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -1305,10 +1363,14 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/hmkcode/sleutel_app/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/SleutelActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sloten.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/AanvraagActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_aanvraag.xml" />
       </list>
     </option>
   </component>
@@ -1329,7 +1391,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -1346,7 +1408,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1449,6 +1510,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1631,7 +1693,11 @@
       <created>1426522169037</created>
       <updated>1426522169037</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sleutel activity aangemaakt en button positionering.">
+      <created>1426589104540</created>
+      <updated>1426589104540</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1641,31 +1707,31 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1685,63 +1751,209 @@
     </option>
     <MESSAGE value="Textviews aangemaakt&#10;String met bedrijfsinformatie ingesteld" />
     <MESSAGE value="Login pagina aangemaakt. Zodat er verbinding naar de server gemaakt kan worden. Werkt nu nog niet goed omdat er nog geen verbinding met de server is" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login pagina aangemaakt. Zodat er verbinding naar de server gemaakt kan worden. Werkt nu nog niet goed omdat er nog geen verbinding met de server is" />
+    <MESSAGE value="Sleutel activity aangemaakt en button positionering." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sleutel activity aangemaakt en button positionering." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="153" max-vertical-offset="2074">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="e#2111#2133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2074">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3723">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
-            <element signature="e#2563#2571#0" expanded="true" />
-            <element signature="e#2946#2947#0" expanded="true" />
-            <element signature="e#3002#3003#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2495" max-vertical-offset="3366">
+          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1326">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2074">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3723">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2495" max-vertical-offset="3366">
+          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1326">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1326">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-51.357143" vertical-offset="1316" max-vertical-offset="3689">
+          <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="165" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.333333" vertical-offset="153" max-vertical-offset="2074">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/SleutelActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2907">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sloten.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-45.535713" vertical-offset="0" max-vertical-offset="2312">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+          <folding>
+            <element signature="e#3356#3372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2167" max-vertical-offset="3366">
+          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="238">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="391">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_scherm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.327273" vertical-offset="510" max-vertical-offset="1326">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_aanvraag.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.717566" vertical-offset="2495" max-vertical-offset="3366">
-          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+        <state vertical-scroll-proportion="-108.92593" vertical-offset="0" max-vertical-offset="3740">
+          <caret line="173" column="50" selection-start-line="173" selection-start-column="50" selection-end-line="173" selection-end-column="50" />
+          <folding>
+            <element signature="e#3538#3562#0" expanded="true" />
+            <element signature="e#4202#4216#0" expanded="true" />
+            <element signature="e#5038#5053#0" expanded="true" />
+            <element signature="e#5876#5889#0" expanded="true" />
+            <element signature="e#6710#6725#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hmkcode/thierry_sleutels/AanvraagActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23421355" vertical-offset="357" max-vertical-offset="4046">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5068#5076#0" expanded="true" />
           </folding>
         </state>
       </provider>
