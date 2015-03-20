@@ -7,14 +7,15 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:weightSum="30">
+        android:weightSum="30"
+        android:background="#c1c8ce">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="right"
-            android:background="#f0f0f0"
+            android:background="#c1c8ce"
             android:layout_weight="13">
 
             <LinearLayout
@@ -27,7 +28,7 @@
                     android:layout_height="50dp"
                     android:id="@+id/imageView5"
                     android:layout_margin="8dp"
-                    android:background="#0f0fff" />
+                    android:background="@mipmap/logo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
                     android:id="@+id/headerTextAanvraag"
                     android:textSize="50dp"
                     android:autoText="false"
-                    android:textColor="#ffffffff"
+                    android:textColor="#0012b1"
                     android:textStyle="bold"
                     android:layout_margin="8dp"
                     android:layout_weight="1" />
@@ -65,7 +66,8 @@
                     android:layout_margin="8dp"
                     android:layout_marginTop="16dp"
                     android:textSize="25dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="#010000" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -76,7 +78,8 @@
                     android:layout_marginLeft="8dp"
                     android:layout_margin="8dp"
                     android:textSize="22dp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    android:textColor="#010000" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -87,7 +90,8 @@
                     android:layout_margin="8dp"
                     android:textSize="22dp"
                     android:textStyle="italic"
-                    android:text="@string/GegevensInvoer" />
+                    android:text="@string/GegevensInvoer"
+                    android:textColor="#010000" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,7 +110,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/Naam"
                         android:id="@+id/textView6"
-                        android:layout_weight="8" />
+                        android:layout_weight="8"
+                        android:textColor="#010000" />
 
                     <EditText
                         android:layout_width="fill_parent"
@@ -126,7 +131,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/Adres"
                         android:id="@+id/textView7"
-                        android:layout_weight="8" />
+                        android:layout_weight="8"
+                        android:textColor="#010000" />
 
                     <EditText
                         android:layout_width="fill_parent"
@@ -146,7 +152,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/Tel"
                         android:id="@+id/textView8"
-                        android:layout_weight="8" />
+                        android:layout_weight="8"
+                        android:textColor="#010000" />
 
                     <EditText
                         android:layout_width="fill_parent"
@@ -166,7 +173,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/Email"
                         android:id="@+id/textView9"
-                        android:layout_weight="8" />
+                        android:layout_weight="8"
+                        android:textColor="#010000" />
 
                     <EditText
                         android:layout_width="fill_parent"
@@ -191,7 +199,7 @@
                 android:text="&lt;"
                 android:id="@+id/backButtonAanvraag"
                 android:textSize="50dp"
-                android:background="#ff00ff"
+                android:background="#fcbb02"
                 android:textColor="#000000"
                 android:onClick="prevPage"
                 android:layout_weight="5" />
@@ -202,8 +210,8 @@
                 android:text="Aanvragen"
                 android:id="@+id/aanvraagButton"
                 android:textSize="25dp"
-                android:background="#0fff00"
-                android:textColor="#00ffff"
+                android:background="#fcbb02"
+                android:textColor="#010000"
                 android:onClick="aanvraag"
                 android:layout_weight="5" />
 

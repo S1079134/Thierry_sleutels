@@ -23,13 +23,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
-
+import com.hmkcode.thierry_sleutels.Helpers.ClientHelper;
+import com.hmkcode.thierry_sleutels.Models.InformatieSlotenBeknoptModel;
+import com.hmkcode.thierry_sleutels.Models.SlotenLijstModel;
+import com.hmkcode.thierry_sleutels.Models.Settings;
 
 
 public class MainActivity extends Activity implements AdapterView.OnItemSelectedListener {
 
     //Vars
-    TextView bisInfo,SlotenTag,SlotenInfo,headerText;
+    TextView bisInfo,slotenTag,slotenInfo,headerText;
     Button nextButton;
     Spinner spinner1;
 
@@ -37,7 +40,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 
     // Instances
     Settings settingsData = Settings.getInstance();
-    SlotenLijstModel SlotenLijstModel = SlotenLijstModel.getInstance();
+    SlotenLijstModel slotenLijstModel = SlotenLijstModel.getInstance();
     InformatieSlotenBeknoptModel informatieSlotenBeknoptModel = InformatieSlotenBeknoptModel.getInstance();
 
     // Opgeslaan mogelijk maken
@@ -51,8 +54,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         setContentView(R.layout.activity_main);
         //setup
         bisInfo = (TextView) findViewById(R.id.bisInfoTextView);
-        SlotenTag = (TextView) findViewById(R.id.SlotenTextView);
-        SlotenInfo = (TextView) findViewById(R.id.InfoShort);
+        slotenTag = (TextView) findViewById(R.id.SlotenTextView);
+        slotenInfo = (TextView) findViewById(R.id.SlotenInfoShort);
         headerText = (TextView) findViewById(R.id.headerText);
 
         nextButton = (Button) findViewById(R.id.nextButton);
@@ -67,11 +70,11 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         nextButton.setTypeface(fontAwesome);
         nextButton.setText(R.string.fa_right);
 
-        // Inladen van de Sloten Lijst
+        // Inladen van de sloten Lijst
         ArrayList<String> list;
-        list = SlotenLijstModel.getSlotenLijst();
+        list = slotenLijstModel.getSlotenLijst();
 
-        // Menu spinner vullen met opgehaalde Sloten lijst
+        // Menu spinner vullen met opgehaalde sloten lijst
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
                 (this, R.layout.spinneritem, list);
 
@@ -128,7 +131,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
             editor.commit();
         }
 
-        SlotenLijstModel.setSelectedSloten(pos);
+        slotenLijstModel.setSelectedSloten(pos);
         setSelectedSloten();
     }
 
@@ -141,16 +144,16 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         else{
             // Hardcoded short info array
             String hardCoded[] = new String[3];
-            hardCoded[0] = "Uw toiletproblemen in mum van tijd verholpen!";
-            hardCoded[1] = "Valt alles in het water? Wij helpen u uit de brand!";
-            hardCoded[2] = "Wij vinden het juiste kasteel voor u!";
+            hardCoded[0] = "Eenvoudig, snel en goedkoop uw bezit achter slot en grendel!";
+            hardCoded[1] = "Digitale beveiliging voor 100% zekerheid!";
+            hardCoded[2] = "Authenticatie en authorizatie op persoonlijk niveau!";
 
-            informatieSlotenBeknoptModel.setShortInfoSlotenHardCoded(hardCoded[SlotenLijstModel.getSelectedSloten()]);
+            informatieSlotenBeknoptModel.setShortInfoSlotenHardCoded(hardCoded[slotenLijstModel.getSelectedSloten()]);
         }
 
         // Vullen van textveld welke een kopje is van de beknopte beschrijving
-        SlotenTag.setText(SlotenLijstModel.getSlotenLijst().get(SlotenLijstModel.getSelectedSloten()));
-        SlotenInfo.setText(informatieSlotenBeknoptModel.getShortInfoSloten());
+        slotenTag.setText(slotenLijstModel.getSlotenLijst().get(slotenLijstModel.getSelectedSloten()));
+        slotenInfo.setText(informatieSlotenBeknoptModel.getShortInfoSloten());
     }
 
     @Override
@@ -164,7 +167,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 
         try {
             //verzenden van het jsonobject
-            infoObject.put("informatiebeknopt",(SlotenLijstModel.getSlotenLijst().get(SlotenLijstModel.getSelectedSloten())));
+            infoObject.put("informatiebeknopt",(slotenLijstModel.getSlotenLijst().get(slotenLijstModel.getSelectedSloten())));
 
         } catch (JSONException e) {
             e.printStackTrace();
