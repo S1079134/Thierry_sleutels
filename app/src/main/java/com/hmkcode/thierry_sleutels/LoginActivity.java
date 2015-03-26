@@ -1,29 +1,32 @@
 package com.hmkcode.thierry_sleutels;
 
-        import android.app.Activity;
-        import android.content.Intent;
-        import android.graphics.Typeface;
-        import android.os.Bundle;
-        import android.util.Log;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.TextView;
-        import android.widget.Toast;
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
-        import org.json.JSONArray;
-        import org.json.JSONException;
-        import org.json.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-        import java.util.ArrayList;
-        import java.util.concurrent.ExecutionException;
+import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
-
+import com.hmkcode.thierry_sleutels.Helpers.ClientHelper;
+import com.hmkcode.thierry_sleutels.Models.InformatieSlotenModel;
+import com.hmkcode.thierry_sleutels.Models.SlotenLijstModel;
+import com.hmkcode.thierry_sleutels.Models.Settings;
 
 /**
- * Created by Thierry Schouten on 3/16/2015.
- * IMTPMD HSLEIDEN
- */
+ * Created by Thierry Schouten on 3/17/2015.
+ * IMTPMD
+ * */
 public class LoginActivity extends Activity {
 
     // vars
@@ -34,12 +37,12 @@ public class LoginActivity extends Activity {
 
     // Instances
     Settings settingsData = Settings.getInstance();
-    SlotenLijstModel SlotenLijstModel = SlotenLijstModel.getInstance();
+    SlotenLijstModel slotenLijstModel = SlotenLijstModel.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.login_scherm);
         // Setup
         ipEdit = (EditText)findViewById(R.id.editTextIP);
         textViewIP = (TextView) findViewById(R.id.textViewIP);
@@ -63,7 +66,7 @@ public class LoginActivity extends Activity {
         boolean connectionAvailable = getOnlineOffline();
         if(connectionAvailable == false){
 
-            SlotenLijstModel.setSlotenHardCoded();
+            slotenLijstModel.setSlotenHardCoded();
             noConnectionMessage();
         }
 
@@ -79,14 +82,14 @@ public class LoginActivity extends Activity {
         finish();
     }
 
-    // Sloten opvragen
+    // Services opvragen
     public void getSloten() {
         //aanmaken van een nieuw jsonobject
-        JSONObject SlotenObject = new JSONObject();
+        JSONObject slotenObject = new JSONObject();
 
         try {
             //verzenden van het jsonobject
-            SlotenObject.put("Slotenlijst","");
+            slotenObject.put("slotenlijst","");
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -96,7 +99,7 @@ public class LoginActivity extends Activity {
         {
             //servercommunicator proberen te verbinden met de server
             try {
-                reactie = new ClientHelper(this, settingsData.getIp4Adress(), 4444, SlotenObject.toString()).execute().get();
+                reactie = new ClientHelper(this, settingsData.getIp4Adress(), 4444, slotenObject.toString()).execute().get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -104,24 +107,24 @@ public class LoginActivity extends Activity {
             }
 
 
-            JSONArray Sloten = null;
+            JSONArray sloten = null;
             try {
-                Sloten = new JSONArray(reactie);
+                sloten = new JSONArray(reactie);
 
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             // Clear array
-            SlotenLijstModel.clearSloten();
+            slotenLijstModel.clearSloten();
 
             // Vullen array
-            for (int i = 0 ; i < Sloten.length(); i++)
+            for (int i = 0 ; i < sloten.length(); i++)
             {
                 try {
-                    JSONObject value = Sloten.getJSONObject(i);
+                    JSONObject value = sloten.getJSONObject(i);
 
                     String valueString = value.getString("naam");
-                    SlotenLijstModel.addSloten(valueString);
+                    slotenLijstModel.addSloten(valueString);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -132,11 +135,11 @@ public class LoginActivity extends Activity {
 
     public boolean getOnlineOffline() {
         //aanmaken van een nieuw jsonobject
-        JSONObject SlotenObject = new JSONObject();
+        JSONObject slotenObject = new JSONObject();
 
         try {
             //verzenden van het jsonobject
-            SlotenObject.put("Slotenlijst","");
+            slotenObject.put("slotenlijst","");
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -146,7 +149,7 @@ public class LoginActivity extends Activity {
             //servercommunicator proberen te verbinden met de server
             try {
                 String reactie;
-                reactie = new ClientHelper(this, settingsData.getIp4Adress(), 4444, SlotenObject.toString()).execute().get();
+                reactie = new ClientHelper(this, settingsData.getIp4Adress(), 4444, slotenObject.toString()).execute().get();
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -178,13 +181,13 @@ public class LoginActivity extends Activity {
 
     public void setSlotenHardCoded(){
 
-        ArrayList<String> Sloten = new ArrayList<String>();
-        Sloten.add("Sleutel slotsystemen");
-        Sloten.add("RFID slotsystemen");
-        Sloten.add("Biometrische slotsystemen");
+        ArrayList<String> sloten = new ArrayList<String>();
+        sloten.add("Sleutel slotsystemen");
+        sloten.add("RFID slotsystemen");
+        sloten.add("Biometrische slotsystemen");
 
-        SlotenLijstModel.clearSloten();
-        SlotenLijstModel.setSlotenLijst(Sloten);
+        slotenLijstModel.clearSloten();
+        slotenLijstModel.setSlotenLijst(sloten);
     }
 
 }

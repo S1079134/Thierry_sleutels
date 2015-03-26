@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\pre-dexed\debug\classes-39dca468038acec7d382798f2209216f36f80e89.jar" />
+    </item>
+    <item
+        jar="C:\Users\Thierry\Documents\School\2de jaar\Periode 3\IPMEDT4\android1\adt-bundle-windows-x86_64-20131030\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-b2d20caff4294b3245b8ba6f1397f24c7b6d3260.jar" />
+    </item>
+    <item
+        jar="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-5562cd1db73b9bc50a5689da3343c6d7af922de2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Thierry\Documents\GitHub\Thierry_sleutels\app\build\intermediates\pre-dexed\debug\classes-71bdf4b14aa1fbdd6feb3dc8f0a1bed48105130b.jar" />
+    </item>
+
+</items>
