@@ -10,7 +10,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor"          >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,20 +21,20 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor">
         </activity>
 
         <activity
             android:name=".SlotenActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor">
 
         </activity>
 
         <activity
             android:name=".AanvraagActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="nosensor">
         </activity>
     </application>
 

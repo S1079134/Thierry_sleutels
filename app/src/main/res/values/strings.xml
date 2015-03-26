@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="busName">De Sleutelaar</string>
+    <string name="welkom">  </string>
     <string name="bedrijfsInfo">De Sleutelaar, voor al uw sloten en beveiliging! </string>
     <string name="selectService">Selecteer een slot</string>
     <string name="LoginText">Vul hier uw IP adres in:</string>
