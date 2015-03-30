@@ -1,8 +1,8 @@
 package com.hmkcode.thierry_sleutels;
-
 /**
- * Created by Thierry on 17-3-2015.
- */
+ * Created by Thierry Schouten on 3/12/2015.
+ * IMTPMD
+ * */
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -14,11 +14,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.hmkcode.thierry_sleutels.R;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.concurrent.ExecutionException;
-
+import com.hmkcode.thierry_sleutels.Helpers.ClientHelper;
+import com.hmkcode.thierry_sleutels.Models.InformatieSlotenBeknoptModel;
+import com.hmkcode.thierry_sleutels.Models.InformatieSlotenModel;
+import com.hmkcode.thierry_sleutels.Models.SlotenLijstModel;
+import com.hmkcode.thierry_sleutels.Models.Settings;
+import com.hmkcode.thierry_sleutels.Models.UserGegevensModel;
 
 
 public class AanvraagActivity extends Activity  {
@@ -31,9 +39,9 @@ public class AanvraagActivity extends Activity  {
     Typeface fontAwesome,customFont;
     // Get instances van de models
     Settings settingsData = Settings.getInstance();
-    slotenLijstModel slotenLijstModel = slotenLijstModel.getInstance();
-    InformatieslotenModel informatieslotenModel = InformatieslotenModel.getInstance();
-    InformatieslotenBeknoptModel informatieslotenBeknoptModel = InformatieslotenBeknoptModel.getInstance();
+    SlotenLijstModel slotenLijstModel = SlotenLijstModel.getInstance();
+    InformatieSlotenModel informatieSlotenModel = InformatieSlotenModel.getInstance();
+    InformatieSlotenBeknoptModel informatieSlotenBeknoptModel = InformatieSlotenBeknoptModel.getInstance();
     UserGegevensModel userGegevensModel = UserGegevensModel.getInstance();
 
     @Override
@@ -45,7 +53,7 @@ public class AanvraagActivity extends Activity  {
         fontAwesome = Typeface.createFromAsset(getAssets(), "fonts/fontawesome.ttf");
         customFont = Typeface.createFromAsset(getAssets(), "fonts/customfont.ttf");
 
-        slotenTag = (TextView) findViewById(R.id.slotenTextViewslotenAanvraag);
+        slotenTag = (TextView) findViewById(R.id.SlotenTextViewSlotenAanvraag);
         slotenInfo = (TextView) findViewById(R.id.slotenInfoAanvraag);
         headerText = (TextView) findViewById(R.id.headerTextAanvraag);
 
@@ -59,10 +67,10 @@ public class AanvraagActivity extends Activity  {
         backButton = (Button) findViewById(R.id.backButtonAanvraag);
         backButton.setTypeface(fontAwesome);
         backButton.setText(R.string.fa_left);
-        // Toon geselecteerde sloten
-        slotenTag.setText(slotenLijstModel.getslotenLijst().get(slotenLijstModel.getSelectedsloten()));
+        // Toon geselecteerde service
+        slotenTag.setText(slotenLijstModel.getSlotenLijst().get(slotenLijstModel.getSelectedSloten()));
         // Tonen van beknopte info
-        slotenInfo.setText(informatieslotenBeknoptModel.getShortInfosloten());
+        slotenInfo.setText(informatieSlotenBeknoptModel.getShortInfoSloten());
     }
 
     @Override
@@ -158,10 +166,10 @@ public class AanvraagActivity extends Activity  {
         JSONObject sendObject = new JSONObject();
         // Opbouwen van de te verzenden json array
         JSONArray koperInfoArray = new JSONArray();
-        // Voeg de sloten naam toe
+        // Voeg de service naam toe
         JSONObject slotenNameObject = new JSONObject();
         try {
-            slotenNameObject.put("slotennaam",slotenLijstModel.getslotenLijst().get(slotenLijstModel.getSelectedsloten()));
+            slotenNameObject.put("slotnaam",slotenLijstModel.getSlotenLijst().get(slotenLijstModel.getSelectedSloten()));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -203,10 +211,16 @@ public class AanvraagActivity extends Activity  {
         }
     }
 
+
+
+
+
+
+
     // Afhandelen van een succesvolle verzending
     public void aanvraagVoltooid(String string){
-        Toast.makeText(this,string,
-                Toast.LENGTH_LONG).show();
+                Toast.makeText(this,R.string.aanvraagOntvangen,
+                Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
@@ -216,7 +230,7 @@ public class AanvraagActivity extends Activity  {
 
     // functie om met de button verder te gaan naar de vorige pagina.
     public void prevPage(View view){
-        Intent intent = new Intent(this, slotenActivity.class);
+        Intent intent = new Intent(this, SlotenActivity.class);
         startActivity(intent);
         finish();
     }
@@ -224,7 +238,7 @@ public class AanvraagActivity extends Activity  {
     @Override
     public void onBackPressed() {
         // Load prev page
-        Intent intent = new Intent(this, slotenActivity.class);
+        Intent intent = new Intent(this, SlotenActivity.class);
         startActivity(intent);
         finish();
     }

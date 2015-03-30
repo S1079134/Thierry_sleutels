@@ -207,7 +207,7 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:text="Aanvragen"
+                android:text="Bestellen"
                 android:id="@+id/aanvraagButton"
                 android:textSize="25dp"
                 android:background="#fcbb02"

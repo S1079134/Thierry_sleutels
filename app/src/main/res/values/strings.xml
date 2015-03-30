@@ -9,7 +9,7 @@
     <string name="bedrijfsInfo">De Sleutelaar, voor al uw sloten en beveiliging! </string>
     <string name="selectService">Selecteer een slot</string>
     <string name="LoginText">Vul hier uw IP adres in:</string>
-    <string name="Verder">Ga verder om het gewenste slot aan te vragen</string>
+    <string name="Verder">Ga verder om het slot te bestellen</string>
     <string name="Selecteer">Selecteer hieronder uw gewenste slot</string>
     <string name="GegevensInvoer">Vul hier uw gegevens in:</string>
 
@@ -19,7 +19,7 @@
     <string name="Email">E-mail:</string>
 
     <string name="errorConnection">Helaas, u heeft geen verbinding met de server. U bekijkt de app nu in Offline modus!</string>
-    <string name="errorConnectionAanvraag">"Aanvraag niet mogelijk in Offline modus!"</string>
+    <string name="errorConnectionAanvraag">"Bestelling niet mogelijk in Offline modus!"</string>
     <string name="connection">"Welkom bij De Sleutelaar, de verbinding met de server is gelukt!"</string>
 
     <string name="aanvraagOntvangen">"Bestelling ontvangen, binnen 3 dagen komt een erkent sleutelaar bij u langs!</string>
